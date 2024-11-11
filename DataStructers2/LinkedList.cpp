@@ -22,3 +22,20 @@ void removeFromFront(LinkedList* list)
     list->head = list->head->next;
     delete temp;
 }
+void printList(const LinkedList* list)
+{
+    Node* current = list->head;
+    while (current != nullptr) 
+    {
+        std::cout << current->data << " ";
+        current = current->next;
+    }
+    std::cout << std::endl;
+}
+void cleanList(LinkedList* list)
+{
+    while (list->head != nullptr)
+    {
+        removeFromFront(list);
+    }
+}
