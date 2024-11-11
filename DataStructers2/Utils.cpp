@@ -1,5 +1,6 @@
 #include <iostream>
 #include "Stack.h"
+#include "Utils.h"
 
 void reverse(int* nums, int size)
 {
@@ -43,4 +44,29 @@ int main()
     std::cout << std::endl;
 
     return 0;
+}
+
+
+
+
+int* reverse10() 
+{
+    static int nums[10];  
+    std::cout << "please enter 10 integers:\n";
+
+   
+    for (int i = 0; i < 10; ++i)
+    {
+        std::cin >> nums[i];
+    }
+
+ 
+    for (int i = 0; i < 5; ++i)
+    {
+        int temp = nums[i];
+        nums[i] = nums[9 - i];
+        nums[9 - i] = temp;
+    }
+
+    return nums; 
 }
