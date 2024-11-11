@@ -41,4 +41,12 @@ int dequeue(Queue* q)
     q->currentSize--;
     return value;
 }
+bool isEmpty(Queue* s) 
+{
+    return s->currentSize == 0;
+}
+bool isFull(Queue* s) 
+{
+    return s->currentSize == s->size;
+}
 
