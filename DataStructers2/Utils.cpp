@@ -52,7 +52,7 @@ int main()
 int* reverse10() 
 {
     static int nums[10];  
-    std::cout << "please enter 10 integers:\n";
+    std::cout << "enter 10 numbers:\n";
 
    
     for (int i = 0; i < 10; ++i)
