@@ -131,9 +131,12 @@
     <ClCompile Include="Main.cpp" />
     <ClCompile Include="Queue.cpp" />
     <ClCompile Include="Queue.h" />
+    <ClCompile Include="Stack.cpp" />
+    <ClCompile Include="Utils.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="LinkedList.h" />
+    <ClInclude Include="stack.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
