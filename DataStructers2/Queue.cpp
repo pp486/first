@@ -29,4 +29,16 @@ void enqueue(Queue* q, unsigned int newValue)
     q->tail = (q->tail + 1) % q->size; 
     q->currentSize++;
 }
+int dequeue(Queue* q)
+{
+    if (isEmpty(q)) 
+    {
+        printf("Queue is empty, cannot dequeue\n");
+        return -1; 
+    }
+    int value = q->elements[q->head];
+    q->head = (q->head + 1) % q->size; 
+    q->currentSize--;
+    return value;
+}
 
